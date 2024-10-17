@@ -1,0 +1,149 @@
+/*Base de los estilos de html*/
+
+/*modifica todas las letras en el main*/
+html{
+    font-size: 10px;
+}
+
+@media screen and(max-width:400px){
+    html{
+        font-size: 8px;
+    }
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    background: #ffffff;
+    font-family: "Lora", serif;
+    font-size: 1.7rem; /*10*1.7=17px (Ayuda a que se adapte para deispositivos pequeños)*/
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.882;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+/*links*/
+a{
+    color: #cf1767;
+    transition: all 0.3s ease-in-out;    
+}
+
+a:hover, a:focus, a:active{
+    color: black;
+}
+
+a:hover, a:active{
+    outline: 0;
+}
+
+/*Tipografia*/
+h1, h2, h3, h4, h5, h6{
+    font-family: "Frank Ruhl Libre", serif;
+    font-weight: 500;
+    font-style: normal;
+    color: black;
+    font-variant-ligatures: common-ligatures;
+    text-rendering: optimizeLegibility;
+}
+
+h1, h2, h2, h4{
+    margin-top: 6rem;
+    margin-bottom: 1.6rem;
+}
+
+@media screen and (max-width:600px){
+    h1, h2, h3, h4{
+        margin-top: 6rem;
+    }
+}
+
+h5, h6{
+    margin-top: 4.8rem;
+    margin-bottom: 1.2rem;
+}
+
+@media screen and (max-width:600px){
+    h4, h5, h6{
+        margin-top: 4rem;
+        margin-bottom: 0.8rem;
+    }
+}
+
+p img{
+    margin: 0;
+}
+
+p.lead{
+    font-family: "Lora", serif;
+    font-weight: 300;
+    font-size: 2.4rem;
+    line-height: 1.833;
+    margin-bottom: 3.6rem;
+    color: black;
+}
+
+/*Estilos a las listas*/
+ol{
+    list-style: decimal;
+}
+
+ul{
+    list-style: disc;
+}
+
+li{
+    display: list-item;
+}
+
+ol, ul{
+    margin-left: 1.6rem;
+}
+
+ul li{
+    padding-left: .4rem;
+}
+
+/*Estilos de Header*/
+.s-header{
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    width: 100%;
+    height: 78px;
+    border: 1px solid black;
+    text-align: center;
+    z-index: 100;
+}
+
+.s-header.sticky{
+    background-color: #050505;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/*Header logo*/
+.header-logo{
+    display: inline-block;
+    margin: 6px, 0, 0;
+    padding: 0;
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+    position: absolute;
+    top: 50%;
+    left: 40px;
+}
+
+.header-logo a{
+    display: block;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: none;
+    transition: all .3s;
+}
